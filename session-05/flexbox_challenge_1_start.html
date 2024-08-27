@@ -2,13 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/style_sheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox Challenge 1</title>
     <style>
       /* Flexbox for Navigation */
-
+      .nav-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aquamarine;
+        padding: 10px;
+      }
+      .nav-item{
+        color: blueviolet;
+        padding: 10px;
+      }
       /* Media Query for Responsive Layout */
       @media (max-width: 768px) {
+        .nav-container{
+          flex-direction: row;
+          text-align: center;
+        }
       }
     </style>
   </head>
